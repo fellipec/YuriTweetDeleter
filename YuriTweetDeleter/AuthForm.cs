@@ -43,10 +43,19 @@ namespace YuriTweetDeleter
             Properties.Settings.Default.AccessTokenSecret = userCredentials.AccessTokenSecret;
             Properties.Settings.Default.Save();
 
-            MessageBox.Show(userCredentials.AccessToken);
+            MessageBox.Show("Credentials saved!","Success");
 
             this.Close();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AccessToken = "";
+            Properties.Settings.Default.AccessTokenSecret = "";
+            Properties.Settings.Default.Save();
+
+            MessageBox.Show("Credentials reseted");
         }
     }
 }
