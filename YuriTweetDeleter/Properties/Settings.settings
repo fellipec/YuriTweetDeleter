@@ -8,5 +8,11 @@
     <Setting Name="ConsumerSecret" Type="System.String" Scope="Application">
       <Value Profile="(Default)">JUqG0tznaCr4EIvRjKDZpHeVl7g0g7cDqUzLrl4K9AN0N2Y6Vt</Value>
     </Setting>
+    <Setting Name="AccessToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AccessTokenSecret" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
