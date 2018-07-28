@@ -24,6 +24,12 @@ namespace YuriTweetDeleter
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+            loadCredentials();
+            
+        }
+
+        private void loadCredentials()
+        {
             // Load saved OAuth credentials
             Auth.SetUserCredentials(Properties.Settings.Default.ConsumerKey,
                                     Properties.Settings.Default.ConsumerSecret,
@@ -38,13 +44,13 @@ namespace YuriTweetDeleter
             {
                 AuthForm AF = new AuthForm();
                 AF.ShowDialog();
+                loadCredentials();
             }
             else
             {
                 // Shows the @ username in titlebar
                 setTitlebar(authenticatedUser.UserIdentifier.ToString());
             }
-            
         }
 
 
