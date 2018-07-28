@@ -11,7 +11,9 @@ To download the latest version, [check the releases](https://github.com/fellipec
 
 # How to use
 
-The first step is to download your Twitter archive. You can request it on [this link](https://twitter.com/settings/account). It may take some time for the Twitter process it.
+When opening the application for the first time, you need to authenticate with Twitter. Click on [this link](auth.md) for instructions about that.
+
+You will need to download your Twitter archive. You can request it on [this link](https://twitter.com/settings/account). It may take some time for the Twitter process it.
 
 Once you get the file, unzip it. You will need the file named `tweets.csv`
 
