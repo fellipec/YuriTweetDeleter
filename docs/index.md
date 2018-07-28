@@ -1,10 +1,10 @@
 For a number of reasons, you may want to delete old things you tweeted. Doing that manually is a tedious and time-consuming task. This app was created to automate this chore so you can get rid of your unwanted tweets in a fast and convenient way.
 
-#Download
+# Download
 
 To download the latest version, [check the releases](https://github.com/fellipec/YuriTweetDeleter/releases).
 
-#Video tutorial
+# Video tutorial
 
 [![Youtube](https://www.youtube.com/yt/img/logo_1x.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
 [![Tutorial](https://i.imgur.com/zuNMjEL.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
