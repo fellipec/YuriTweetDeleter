@@ -1,5 +1,3 @@
-# Yuri Tweet Deleter
-A Windows app to delete unwanted tweets
 [For instructions read the wiki.](https://github.com/fellipec/YuriTweetDeleter/wiki)
 
 To download the latest version, [check the releases](https://github.com/fellipec/YuriTweetDeleter/releases).
