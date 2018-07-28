@@ -17,19 +17,19 @@ You will need to download your Twitter archive. You can request it on [this link
 
 Once you get the file, unzip it. You will need the file named `tweets.csv`
 
-![Folder showing tweets.csv file.](https://i.imgur.com/2aXcUAA.png)
+![Folder showing tweets.csv file.](images/5.png)
 
 In the main program window, select the button `Load archive` and open the `tweets.csv` file. The program will start loading it. Depending on the size of your archive this operation can take few minutes.
 
 Once the archive is successfully loaded, the tweets will be displayed in a grid.
 
-![Grid with loaded tweets](https://i.imgur.com/BkoxWnp.png)
+![Grid with loaded tweets](images/6.png)
 
 You can either select a start and end date and/or type a text filter. The text filter recognizes [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). 
 
 Click on `Select tweets` to automatically select all the tweets matching your search parameters. This may take a few minutes to complete. The selected tweets will be highlighted on the grid.
 
-![Tweet grid](https://i.imgur.com/fBexzLT.png)
+![Tweet grid](images/7.png)
 
 You can manually select the tweets. Hold `<CTRL>` while clicking to select multiple tweets. When you are satisfied with your selection, click on the button `Delete Tweets`. The program will then issue deletion commands to Twitter. This may take a while to complete. 
 

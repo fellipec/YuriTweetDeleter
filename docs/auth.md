@@ -4,16 +4,16 @@ In order to be able to delete unwanted tweets, you first need to authorize the p
 
 The first step is to click on `"Authorize with Twitter"` button.
 
-![Authentication screen](https://i.imgur.com/sa84i1l.png)
+![Authentication screen](images/1.png)
 
 A browser window will open. You should log in with your Twitter account. 
 
-![Twitter OAuth screen](https://i.imgur.com/b5QFVte.png)
+![Twitter OAuth screen](images/2.png)
 
 Once authorized, Twitter will show you a PIN.
 
-![Twitter PIN screen](https://i.imgur.com/h8G2YZJ.png)
+![Twitter PIN screen](images/3.png)
 
 Copy or type the number into the text box, then click `Save`.
 
-![PIN typed](https://i.imgur.com/Osjfju0.png)
+![PIN typed](images/4.png)
