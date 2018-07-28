@@ -3,7 +3,10 @@ A Windows app to delete unwanted tweets
 
 [For instructions read the wiki.](https://github.com/fellipec/YuriTweetDeleter/wiki)
 
-[![Youtube](https://www.youtube.com/yt/img/logo_1x.png)](https://youtu.be/YV0OdgZf8lM)
+[![Youtube](https://www.youtube.com/yt/img/logo_1x.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
+[![Tutorial](https://i.imgur.com/zuNMjEL.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
+
+***
 
 ### License information
 
