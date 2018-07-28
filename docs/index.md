@@ -7,7 +7,7 @@ To download the latest version, [check the releases](https://github.com/fellipec
 # Video tutorial
 
 [![Youtube](https://www.youtube.com/yt/img/logo_1x.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
-[![Tutorial](https://i.imgur.com/zuNMjEL.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
+[![Tutorial](images/youtube.png)](https://www.youtube.com/watch?v=YV0OdgZf8lM)
 
 # How to use
 
