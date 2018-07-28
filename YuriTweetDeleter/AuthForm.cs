@@ -14,7 +14,22 @@ namespace YuriTweetDeleter
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+            // Shows a confirmation dialog
+            DialogResult confirmReset = MessageBox.Show("Are you sure to reset the authenticated user?", "Reset Authentication", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmReset == DialogResult.Yes)
+            {
+                // Clean the user authentication settings
+                Properties.Settings.Default.AccessToken = "";
+                Properties.Settings.Default.AccessTokenSecret = "";
+                Properties.Settings.Default.Save();
+
+                MessageBox.Show("Credentials reseted");
+            }
+        }
+
+        private void buttonAuthorize_Click(object sender, EventArgs e)
         {
             // Create a new set of credentials for the application.
             string CKey = Properties.Settings.Default.ConsumerKey;
@@ -26,14 +41,13 @@ namespace YuriTweetDeleter
 
             // Go to the URL so that Twitter authenticates the user and gives him a PIN code.
             Process.Start(Program.AuthenticationContext.AuthorizationURL);
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             // Ask the user to enter the pin code given by Twitter
-            var pinCode = textBox1.Text;
-                        
+            var pinCode = textBoxConfirmationCode.Text;
+
 
             // With this pin code it is now possible to get the credentials back from Twitter
             var userCredentials = AuthFlow.CreateCredentialsFromVerifierCode(pinCode, Program.AuthenticationContext);
@@ -43,19 +57,24 @@ namespace YuriTweetDeleter
             Properties.Settings.Default.AccessTokenSecret = userCredentials.AccessTokenSecret;
             Properties.Settings.Default.Save();
 
-            MessageBox.Show("Credentials saved!","Success");
+            MessageBox.Show("Credentials saved!", "Success");
 
             this.Close();
-
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void AuthForm_Load(object sender, EventArgs e)
         {
-            Properties.Settings.Default.AccessToken = "";
-            Properties.Settings.Default.AccessTokenSecret = "";
-            Properties.Settings.Default.Save();
+            showHelp();
+        }
 
-            MessageBox.Show("Credentials reseted");
+        private void AuthForm_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            showHelp();
+        }
+
+        private void showHelp()
+        {
+            Process.Start("https://github.com/fellipec/YuriTweetDeleter/wiki/Authentication");
         }
     }
 }

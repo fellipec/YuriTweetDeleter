@@ -37,6 +37,8 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonLoadTweets = new System.Windows.Forms.Button();
             this.groupBoxFilters = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonSelectTweets = new System.Windows.Forms.Button();
             this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
@@ -47,8 +49,7 @@
             this.saveFileDialogTweets = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialogTweets = new System.Windows.Forms.OpenFileDialog();
             this.dataSet1 = new System.Data.DataSet();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.panelLog.SuspendLayout();
             this.panelControls.SuspendLayout();
             this.groupBoxFilters.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             // panelControls
             // 
+            this.panelControls.Controls.Add(this.buttonHelp);
             this.panelControls.Controls.Add(this.button1);
             this.panelControls.Controls.Add(this.progressBar1);
             this.panelControls.Controls.Add(this.buttonDelete);
@@ -111,6 +113,7 @@
             // buttonDelete
             // 
             this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(594, 101);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(98, 23);
@@ -122,11 +125,12 @@
             // buttonLoadTweets
             // 
             this.buttonLoadTweets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLoadTweets.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLoadTweets.Location = new System.Drawing.Point(594, 72);
             this.buttonLoadTweets.Name = "buttonLoadTweets";
             this.buttonLoadTweets.Size = new System.Drawing.Size(98, 23);
             this.buttonLoadTweets.TabIndex = 1;
-            this.buttonLoadTweets.Text = "Load Tweets";
+            this.buttonLoadTweets.Text = "Load archive";
             this.buttonLoadTweets.UseVisualStyleBackColor = true;
             this.buttonLoadTweets.Click += new System.EventHandler(this.buttonLoadTweets_Click);
             // 
@@ -146,8 +150,27 @@
             this.groupBoxFilters.TabStop = false;
             this.groupBoxFilters.Text = "Filters";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(181, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "End date";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Start date";
+            // 
             // buttonSelectTweets
             // 
+            this.buttonSelectTweets.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSelectTweets.Location = new System.Drawing.Point(411, 20);
             this.buttonSelectTweets.Name = "buttonSelectTweets";
             this.buttonSelectTweets.Size = new System.Drawing.Size(108, 91);
@@ -216,23 +239,15 @@
             // 
             this.dataSet1.DataSetName = "NewDataSet";
             // 
-            // label1
+            // buttonHelp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Start date";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(181, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "End date";
+            this.buttonHelp.Location = new System.Drawing.Point(594, 43);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(98, 23);
+            this.buttonHelp.TabIndex = 7;
+            this.buttonHelp.Text = "Help/About";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // MainForm
             // 
@@ -281,6 +296,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }
 
