@@ -25,7 +25,7 @@ Once the archive is successfully loaded, the tweets will be displayed in a grid.
 
 ![Grid with loaded tweets](images/6.png)
 
-You can either select a start and end date and/or type a text filter. The text filter recognizes [regular expressions](https://en.wikipedia.org/wiki/Regular_expression). 
+You can either select a start and end date and/or type a text filter. The text filter recognizes [regular expressions](regex.md). 
 
 Click on `Select tweets` to automatically select all the tweets matching your search parameters. This may take a few minutes to complete. The selected tweets will be highlighted on the grid.
 
@@ -33,6 +33,8 @@ Click on `Select tweets` to automatically select all the tweets matching your se
 
 You can manually select the tweets. Hold `<CTRL>` while clicking to select multiple tweets. When you are satisfied with your selection, click on the button `Delete Tweets`. The program will then issue deletion commands to Twitter. This may take a while to complete. 
 
+## [Authentication help](auth.md)
+## [Regular expression help](regex.md)
 
 ***
 
