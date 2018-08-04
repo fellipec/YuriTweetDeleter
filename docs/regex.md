@@ -8,6 +8,12 @@
 
 `^RT @user`
 
+### Tweets with embed video
+/[0-9]*/video/?
+
+### Tweets with embed photos or GIFs
+(\/[0-9]*\/photo\/?)|(twimg\.com.*[jpg|gif])
+
 ### Tweets that contains a valid URL 
 
 `(http|https|ftp):[\/]{2}([a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,4})(:[0-9]+)?\/?([a-zA-Z0-9\-\._\?\,\'\/\\\+&amp;%\$#\=~]*)`
