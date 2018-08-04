@@ -9,10 +9,12 @@
 `^RT @user`
 
 ### Tweets with embed video
-/[0-9]*/video/?
+
+`/[0-9]*/video/?`
 
 ### Tweets with embed photos or GIFs
-(\/[0-9]*\/photo\/?)|(twimg\.com.*[jpg|gif])
+
+`(\/[0-9]*\/photo\/?)|(twimg\.com.*[jpg|gif])`
 
 ### Tweets that contains a valid URL 
 
