@@ -1,3 +1,5 @@
+### Warning! Because the API access to X (Formely Twitter) was disabled, this software doesn't work anymore and this repository will be archived
+
 [For instructions read the wiki.](https://github.com/fellipec/YuriTweetDeleter/wiki)
 
 To download the latest version, [check the releases](https://github.com/fellipec/YuriTweetDeleter/releases).
